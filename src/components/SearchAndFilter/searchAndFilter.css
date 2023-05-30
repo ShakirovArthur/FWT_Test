@@ -1,0 +1,157 @@
+.search-filter {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.input-search {
+    width: calc(100% - 2px);
+    height: 43px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-indent: 15px;
+    padding: 0;
+}
+.Input--dark{
+    background: #0C0C0C;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF4D;
+}
+.select-filter {
+    width: 100%;
+    height: 45px;
+    max-height: 100px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+.dark{
+    background: #0C0C0C;
+    border: 1px solid #FFFFFF;
+}
+.dark div{
+    color: #FFFFFF;
+}
+.dark svg{
+    fill: #FFFFFF;
+}
+.range-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.range-input-from {
+    width: 89px;
+    height: 41px;
+    background: #EFEFEF;
+    margin: 0 10px 20px 21px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.range-input-before {
+    width: 89px;
+    height: 41px;
+    background: #EFEFEF;
+    margin: 0 21px 20px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .range-input {
+        display: block;
+        text-align: center;
+    }
+
+    .range-input-from {
+        width: 104px;
+        margin: 0;
+    }
+
+    .range-input-before {
+        width: 104px;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .range-input {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .search-filter {
+        display: block;
+    }
+
+    .input-search {
+        width: calc(100% - 2px);
+        height: 43px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        text-indent: 15px;
+
+    }
+
+    .input-search::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .select-filter {
+        margin-top: 15px;
+        width: 100%;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+
+    }
+
+    .range-input {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .range-input-from {
+        width: 104px;
+        height: 41px;
+        margin-left: 17.5px;
+        background: #EFEFEF;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+    }
+
+    .range-input-before {
+        width: 104px;
+        height: 41px;
+        margin-right: 17.5px;
+        background: #EFEFEF;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+    }
+    .Input--dark{
+        background: #0C0C0C;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF4D;
+    }
+    .dark{
+        background: #0C0C0C;
+        border: 1px solid #FFFFFF;
+    }
+    .dark div{
+        color: #FFFFFF;
+    }
+    .dark svg{
+        fill: #FFFFFF;
+    }
+}
