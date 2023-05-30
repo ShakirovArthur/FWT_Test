@@ -3,6 +3,7 @@ import "./Painting.css";
 
 export const Painting = ({imageUrl: imageUrlProp, name, delay, theme}) => {
     const [imageUrl, setImageUrl] = useState();
+    // Данная функция нужна для того, чтобы загружать изображение с некоторой задержкой и не нагружать сервер, иначе сервер не отдает часть картинок
     useEffect(() => {
         const loadingImage = setTimeout(() => {
             setImageUrl(imageUrlProp)

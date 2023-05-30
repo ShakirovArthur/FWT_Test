@@ -15,9 +15,7 @@ export const MainPage = ({theme}) => {
     const [locationId, setLocationId] = useState()
 
     const handlePageChange = useCallback((newPage) => {
-        if (newPage >= 1 && newPage <= 5) {
-            setCurrentPage(newPage);
-        }
+        setCurrentPage(newPage);
     }, []);
 
     const updateFromDate = (date) => {
