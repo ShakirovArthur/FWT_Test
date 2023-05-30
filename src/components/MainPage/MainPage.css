@@ -1,0 +1,70 @@
+.main-page {
+    padding-bottom: 97px;
+}
+
+.paintings {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - 40px) / 3));
+    grid-template-rows: repeat(4, calc((100% - 60px) / 4));
+    gap: 20px;
+}
+
+.picture {
+    position: relative;
+    border: solid 1px;
+    border-radius: 20px;
+    height: 273px;
+}
+
+.picture-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.picture-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 8px);
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(128, 128, 128, 0.7);
+    margin: 0;
+    padding: 5px;
+    color: white;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .paintings {
+        grid-template-columns: repeat(3, calc((100% - 40px) / 3));
+    }
+
+    .picture {
+        height: 228px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .paintings {
+        grid-template-columns: repeat(2, calc((100% - 20px) / 2));
+    }
+
+    .picture {
+        height: 247px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .paintings {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .picture {
+        height: 203px;
+    }
+}

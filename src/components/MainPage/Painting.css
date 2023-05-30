@@ -1,0 +1,12 @@
+.picture-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.dark-theme {
+    color: white;
+}

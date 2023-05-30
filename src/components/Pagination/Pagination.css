@@ -1,0 +1,52 @@
+.Pagination button {
+    margin-top: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.Pagination :hover {
+    cursor: pointer;
+}
+
+.PaginationPage {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.Pagination button:first-child {
+    border-radius: 20% 0 0 20%;
+}
+
+.Pagination button:last-child {
+    border-radius: 0 20% 20% 0;
+}
+
+.PaginationPageWithActive {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.pagination button[disabled] {
+    color: #0000004D;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.PaginationPage--dark {
+    background-color: black;
+    border: 1px solid #FFFFFF;
+    color: white;
+}
+
+.pagination-dark button[disabled] {
+    color: #FFFFFF4D;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.PaginationPageWithActive--dark {
+    background-color: white;
+    color: black;
+}
